@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <div class="g-bg">
-      <img alt="Vue logo" src="../assets/logo.png">
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <MySideTab ref="mySideTab"></MySideTab>
+      <MyFooterTab></MyFooterTab>
     </div>
     <LightRain/>
   </div>
@@ -10,14 +10,18 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 import LightRain from '../components/LigthRain/index.vue'
+import MySideTab from '@/components/MySideTab/index.vue'
+import MyFooterTab from '@/components/MyFooterTab/index.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld,
-    LightRain
+    LightRain,
+    MySideTab,
+    MyFooterTab
+  },
+  methods: {
   }
 }
 </script>
